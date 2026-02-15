@@ -21,11 +21,6 @@
       border: none;
       border-radius: 15px;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      transform: scale(1.1);
     }
 
     #message {
@@ -34,12 +29,7 @@
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .show {
-      opacity: 1;
+      display: none; /* caché au début */
     }
   </style>
 </head>
@@ -48,26 +38,24 @@
 
   <h2>Click here ❤️</h2>
 
-  <button onclick="showLove()">Open My Heart 💌</button>
+  <button id="loveBtn">Open My Heart 💌</button>
 
   <div id="message">
     <p>
       Nissrin 💖<br><br>
-      From the moment you came into my life, everything became brighter.
-      Your smile is my favorite notification,
-      your voice is my favorite melody,
-      and your presence is my greatest peace.
-      <br><br>
-      You are not just my Valentine…
-      You are my happiness, my comfort, and my forever.
+      You are my happiness, my peace, and my forever.
+      Every moment with you makes my world brighter.
       💌✨
     </p>
   </div>
 
   <script>
-    function showLove() {
-      document.getElementById("message").classList.add("show");
-    }
+    const button = document.getElementById("loveBtn");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function() {
+      message.style.display = "block";
+    });
   </script>
 
 </body>
