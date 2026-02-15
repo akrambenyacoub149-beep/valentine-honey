@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>For Nissrin 💌</title>
+
+  <style>
+    body {
+      text-align: center;
+      margin-top: 80px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: white;
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 20px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #message {
+      margin-top: 40px;
+      font-size: 22px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Click here ❤️</h2>
+
+  <button onclick="showLove()">Open My Heart 💌</button>
+
+  <div id="message">
+    <p>
+      Nissrin 💖<br><br>
+      From the moment you came into my life, everything became brighter.
+      Your smile is my favorite notification,
+      your voice is my favorite melody,
+      and your presence is my greatest peace.
+      <br><br>
+      You are not just my Valentine…
+      You are my happiness, my comfort, and my forever.
+      💌✨
+    </p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("message").classList.add("show");
+    }
+  </script>
+
+</body>
+</html>
