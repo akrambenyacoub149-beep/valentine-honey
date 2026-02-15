@@ -7,7 +7,7 @@
   <style>
     body {
       text-align: center;
-      margin-top: 80px;
+      margin-top: 60px;
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #ff9a9e, #fad0c4);
       color: white;
@@ -25,11 +25,14 @@
 
     #message {
       margin-top: 40px;
-      font-size: 22px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      display: none; /* caché au début */
+      display: none;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -41,12 +44,13 @@
   <button id="loveBtn">Open My Heart 💌</button>
 
   <div id="message">
-    <p>
+    <h2>
       Nissrin 💖<br><br>
       You are my happiness, my peace, and my forever.
-      Every moment with you makes my world brighter.
-      💌✨
-    </p>
+    </h2>
+
+    <!-- ICI LA PHOTO -->
+    <img src="photo.jpeg" alt="Our photo">
   </div>
 
   <script>
